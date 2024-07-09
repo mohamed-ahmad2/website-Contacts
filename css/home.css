@@ -1,0 +1,189 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Work Sans", sans-serif;
+  height: 100vh;
+  background-color: #0e202d;
+  background-image: url("../image/night.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  background: rgb(17 31 59 / 77%);
+  position: fixed;
+  top: 0;
+  left: 5%;
+  z-index: 1000;
+}
+
+header .container,
+.welcome,
+.description {
+  width: 90%;
+  margin: auto;
+  align-items: center;
+}
+
+header .container img {
+  width: 60px;
+  height: 60px;
+  margin-left: 20px;
+}
+
+header .container h1,
+h2,
+p {
+  color: aqua;
+  margin: 0px;
+}
+
+header .container h1 {
+  font-size: 50px;
+}
+
+p {
+  font-size: 30px;
+}
+
+.welcome,
+.description,
+footer {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  line-height: 1.8;
+  letter-spacing: 3px;
+}
+
+.welcome {
+  height: 30em;
+  border: 2px solid;
+  border-color: transparent transparent rgb(17 31 59 / 77%) transparent;
+}
+
+.description {
+  height: 30em;
+}
+
+footer {
+  height: 30em;
+  background: rgb(17 31 59 / 77%);
+}
+
+h2 {
+  font-size: 80px;
+}
+
+header .container .list .icon {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: end;
+  width: 45px;
+  height: 30px;
+}
+
+header .container .list {
+  margin-right: 25px;
+}
+
+header .container .list ul {
+  display: none;
+}
+
+header .container .list:hover ul {
+  display: block;
+}
+
+header .container .list .icon span {
+  background-color: #fdfdfd;
+  height: 3px;
+  transition: 0.3s;
+}
+
+header .container .list .icon span:first-child {
+  width: 100%;
+}
+
+header .container .list .icon span:last-child {
+  width: 45%;
+}
+
+header .container .list .icon span:nth-child(2) {
+  width: 65%;
+}
+
+header .container .list .icon:hover span {
+  width: 100%;
+}
+
+header .container .list ul {
+  list-style-type: none;
+  padding-left: 0px;
+  margin: 0px;
+}
+
+header .container ul li a {
+  text-decoration: none;
+  color: #4b0082;
+  font-weight: bold;
+  font-size: larger;
+  transition: 0.3s;
+}
+
+header .container ul li {
+  padding: 15px 20px;
+  width: 145px;
+  background-color: #add8e6;
+  height: 50px;
+  border: 2px solid;
+  border-color: transparent transparent #94c5d59e transparent;
+}
+
+header .container ul li:last-child {
+  border-color: transparent transparent transparent transparent;
+}
+
+header .container ul {
+  position: absolute;
+  right: 34px;
+  top: 70px;
+}
+
+header .container ul li a:hover {
+  margin-left: 15px;
+}
+
+header .container ul::after {
+  content: "";
+  border-width: 15px;
+  border-style: solid;
+  border-color: transparent transparent #add8e6 transparent;
+  position: absolute;
+  right: 0px;
+  top: -28px;
+}
+
+footer span p {
+  display: inline-block;
+}
+
+footer span a {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 1.35em;
+  margin-right: 10px;
+  color: #9500ff;
+}
